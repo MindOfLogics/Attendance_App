@@ -1,0 +1,210 @@
+.profile-page {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.profile-sidebar {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: fit-content;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: white;
+}
+
+.profile-sidebar h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 0.5rem;
+}
+
+.profile-sidebar > p {
+  color: var(--gray-600);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.profile-stats {
+  display: grid;
+  gap: 1rem;
+}
+
+.profile-stat {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--gray-50);
+  border-radius: 0.5rem;
+  text-align: left;
+}
+
+.profile-stat svg {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 0.125rem;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--gray-600);
+}
+
+.profile-main {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.profile-main .card {
+  margin-bottom: 0;
+}
+
+.profile-main h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.profile-main label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-main label svg {
+  color: var(--gray-400);
+}
+
+.profile-main small {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--gray-500);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.attendance-info {
+  margin-top: 1.5rem;
+}
+
+.info-card {
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(6, 182, 212, 0.1));
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  border-radius: 0.5rem;
+}
+
+.info-card h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 0.5rem;
+}
+
+.info-card p {
+  font-size: 0.875rem;
+  color: var(--gray-700);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.btn-block {
+  width: 100%;
+  justify-content: center;
+}
+
+.profile-view-field {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.profile-view-field:last-child {
+  border-bottom: none;
+}
+
+.profile-view-field label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--gray-600);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profile-view-field p {
+  font-size: 1rem;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.profile-criteria {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: var(--gray-50);
+  border-radius: 0.5rem;
+}
+
+.criteria-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--gray-600);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.criteria-text {
+  font-size: 0.875rem;
+  color: var(--gray-700);
+  margin: 0;
+}
+
+@media (max-width: 968px) {
+  .profile-container {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-sidebar {
+    order: 2;
+  }
+
+  .profile-main {
+    order: 1;
+  }
+}
